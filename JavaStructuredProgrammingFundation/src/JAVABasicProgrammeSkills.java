@@ -1,3 +1,5 @@
+import exampleToLearnJAVABasicProgrammingSkills.*;
+
 public class JAVABasicProgrammeSkills {
     public static void main(String[] args) {
         /*
@@ -11,12 +13,13 @@ public class JAVABasicProgrammeSkills {
 
         E.G. Addition.java
          */
+        Addition.main(args);
         /*
         变量的作用域
         "同名变量的屏蔽原则"
         E.G. WhichIsUsed.java
          */
-
+        WhichIsUsed.main(args);
         /*
         变量的使用准则
         用变量存储输入数据 变量名反映数据含义 变量在使用前保证有确切值
@@ -27,7 +30,7 @@ public class JAVABasicProgrammeSkills {
         方法一:使用JOptionPane类的showInputDialog方法 Addition.java
         方法二:使用Scanner类(JDK 5.0以上) InputTest.java
          */
-
+        InputTest.main(args);
         /*
         变量间的类型转换
         自动类型转换是安全的 强制类型转换可能会引起信息损失
@@ -42,7 +45,7 @@ public class JAVABasicProgrammeSkills {
 
         将原始数据类型的名字首字母大写 得到对应的包装类型(是引用类型) 好多方法
          */
-
+        DataTypeChange.main(args);
         /*
          关于double的近似
          TestDouble.java
@@ -59,11 +62,14 @@ public class JAVABasicProgrammeSkills {
          当是形参为浮点数时，推荐先将浮点数转换为字符串类型然后放入构造函数中
          )
          */
+        TestDouble.main(args);
+        TestBigDecimal.main(args);
         /*
         字符串转化为数字的基本方法
         int number = Integer.parseInt(numberString);
         类Integer在包Java.lang, 封装了int类型的整数 是原始数据类型int的包装类
          */
+        RandomStr.main(args);
         /*
         字符联接操作
         运算符+ (String和其他数据类型相加 就是新的String)
